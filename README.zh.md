@@ -45,11 +45,11 @@ English: [README.md](./README.md)
 
 ### 从 npm 安装（推荐）
 
-GUI：**插件 → 添加插件** → 填入 `@leishangyu/dsh-ssh-remote`。
+GUI：**插件 → 添加插件** → 填入 `dsh-remote-ssh-plugin`。
 用 `dsh` CLI 时（web profile；桌面版 profile 由应用独占管理，请在 GUI 安装）：
 
 ```sh
-dsh plugin --profile web add @leishangyu/dsh-ssh-remote
+dsh plugin --profile web add dsh-remote-ssh-plugin
 ```
 
 ### 从 GitHub 安装

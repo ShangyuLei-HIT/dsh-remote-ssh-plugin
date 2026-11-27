@@ -53,11 +53,11 @@ session is bound to.
 ### From npm (recommended)
 
 In the DSH Web/Desktop GUI: **Plugins → Add plugin →** enter
-`@leishangyu/dsh-ssh-remote`. From a shell with the `dsh` CLI (web profile; the
+`dsh-remote-ssh-plugin`. From a shell with the `dsh` CLI (web profile; the
 Desktop profile is managed by the app itself, install through its GUI):
 
 ```sh
-dsh plugin --profile web add @leishangyu/dsh-ssh-remote
+dsh plugin --profile web add dsh-remote-ssh-plugin
 ```
 
 ### From GitHub

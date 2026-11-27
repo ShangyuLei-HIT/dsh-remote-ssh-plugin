@@ -7,9 +7,10 @@ All notable changes to this project are documented here. The format follows
 ## [1.4.3] - 2026-11-27
 
 ### Changed
-- First npm release as `@leishangyu/dsh-ssh-remote`: the unscoped npm name
-  `dsh-ssh-remote` is owned by another author, so the package publishes under the
-  maintainer scope. The bundle patch, docs and market index use the scoped name.
+- First npm release as `dsh-remote-ssh-plugin`. The shorter names
+  `dsh-ssh-remote`, `dsh-remote-ssh`, `dsh-ssh-workspace` and
+  `dsh-remote-workspaces` are owned by other authors, so the package uses this
+  name; the bundle patch, docs and market index follow it.
 
 ## [1.4.2] - 2026-11-27
 
