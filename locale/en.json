@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "SSH remote development",
+    "description": "Turns machines from your OpenSSH configuration into where the agent works: it adds remote_status, remote_exec, remote_read, remote_write, remote_edit, remote_grep, remote_glob, remote_upload and remote_download tools, and a Settings → SSH remote development panel that adds or edits machines, tests the connection, browses remote directories over SSH and chooses each machine's remote working directory. Ask for work on a remote machine in chat and the agent calls those tools; every tool takes an optional host argument naming a configured machine. The session workspace picker stays local: it chooses the local folder for this Mac, while remote paths are absolute or relative to each machine's chosen directory. Machines and their directories live in ~/.dsh/ssh-remote/machines.json; turning the plugin off removes the panel and every remote tool. Commands run as your SSH user without a second approval gate, so configure only machines you are willing to let this session modify. Picking a remote directory also registers a real DSH workspace titled “SSH · machine · path”: sessions opened in that workspace are bound to the remote directory, the remote_* tools default there, and the local file/shell tools are hidden in those sessions.",
+    "detail": "docs/DETAIL.md"
+  }
+}

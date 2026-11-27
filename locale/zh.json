@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "SSH 远程开发机",
+    "description": "把 OpenSSH 配置里的一台或多台机器变成 Agent 的工作机：新增 remote_status、remote_exec、remote_read、remote_write、remote_edit、remote_grep、remote_glob、remote_upload、remote_download 工具，并在「设置 → SSH 远程开发机」提供一个可视化面板，可添加/编辑机器、测试连接、通过 SSH 浏览远程目录并选择每台机器的远程工作目录。在对话里说明要在哪台机器上做什么，Agent 就会调用这些工具；每个工具都有可选 host 参数用于切换机器。会话的工作区选择器仍然只选本地目录：远程路径是绝对路径或相对于该机器选定的目录。机器与目录保存在 ~/.dsh/ssh-remote/machines.json；停用插件会移除面板和全部远程工具。命令以你的 SSH 用户身份执行，不再经过额外审批，因此只应配置你允许本会话修改的机器。 选定远程目录后会注册一个真实的 DSH 工作区（标题形如“SSH · 机器 · 路径”）：在该工作区下新建的会话自动绑定这个远程目录，remote_* 工具默认工作于此，本地文件/shell 工具在这些会话中隐藏。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

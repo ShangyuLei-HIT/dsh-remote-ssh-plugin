@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-labelledby="ssh-remote-preview-title">
+  <title id="ssh-remote-preview-title">A local developer machine connected over SSH to a remote server running a shell</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- local machine -->
+    <rect x="48" y="68" width="190" height="120" rx="10" stroke="#8B96AD" stroke-width="2.5"/>
+    <line x1="48" y1="92" x2="238" y2="92" stroke="#C7CEDC" stroke-width="2"/>
+    <circle cx="66" cy="80" r="3" fill="#C7CEDC" stroke="none"/>
+    <circle cx="80" cy="80" r="3" fill="#C7CEDC" stroke="none"/>
+    <circle cx="94" cy="80" r="3" fill="#C7CEDC" stroke="none"/>
+    <path d="M70 118 l10 9 -10 9" stroke="#6E7CFF" stroke-width="3"/>
+    <line x1="90" y1="136" x2="112" y2="136" stroke="#6E7CFF" stroke-width="3"/>
+    <line x1="124" y1="120" x2="188" y2="120" stroke="#D5DAE6" stroke-width="4"/>
+    <line x1="124" y1="138" x2="210" y2="138" stroke="#D5DAE6" stroke-width="4"/>
+    <line x1="124" y1="156" x2="170" y2="156" stroke="#D5DAE6" stroke-width="4"/>
+
+    <!-- multiplexed SSH channel -->
+    <line x1="248" y1="128" x2="392" y2="128" stroke="#6E7CFF" stroke-width="2.5" stroke-dasharray="9 9"/>
+    <path d="M386 121 l9 7 -9 7" stroke="#6E7CFF" stroke-width="2.5" fill="none"/>
+    <path d="M254 121 l-9 7 9 7" stroke="#6E7CFF" stroke-width="2.5" fill="none"/>
+
+    <!-- encrypted channel marker -->
+    <rect x="304" y="96" width="22" height="17" rx="4" stroke="#34C08A" stroke-width="2.5"/>
+    <path d="M309 96 v-6 a6 6 0 0 1 12 0 v6" stroke="#34C08A" stroke-width="2.5" fill="none"/>
+    <circle cx="315" cy="104" r="2.4" fill="#34C08A" stroke="none"/>
+
+    <!-- remote server, two units -->
+    <rect x="402" y="76" width="190" height="48" rx="8" stroke="#6E7CFF" stroke-width="2.5"/>
+    <rect x="402" y="136" width="190" height="48" rx="8" stroke="#6E7CFF" stroke-width="2.5"/>
+    <line x1="420" y1="100" x2="458" y2="100" stroke="#C7CEDC" stroke-width="4"/>
+    <line x1="420" y1="160" x2="458" y2="160" stroke="#C7CEDC" stroke-width="4"/>
+    <circle cx="566" cy="100" r="4.5" fill="#34C08A" stroke="none"/>
+    <circle cx="566" cy="160" r="4.5" fill="#C7CEDC" stroke="none"/>
+
+    <!-- terminal prompt on the remote unit -->
+    <path d="M486 94 l8 6 -8 6" stroke="#6E7CFF" stroke-width="2.5"/>
+    <line x1="502" y1="106" x2="514" y2="106" stroke="#6E7CFF" stroke-width="2.5"/>
+    <path d="M486 154 l8 6 -8 6" stroke="#6E7CFF" stroke-width="2.5"/>
+    <line x1="502" y1="166" x2="514" y2="166" stroke="#6E7CFF" stroke-width="2.5"/>
+
+    <!-- remote file rows -->
+    <line x1="420" y1="208" x2="520" y2="208" stroke="#D5DAE6" stroke-width="4"/>
+    <line x1="420" y1="224" x2="560" y2="224" stroke="#D5DAE6" stroke-width="4"/>
+    <line x1="420" y1="240" x2="492" y2="240" stroke="#D5DAE6" stroke-width="4"/>
+  </g>
+</svg>

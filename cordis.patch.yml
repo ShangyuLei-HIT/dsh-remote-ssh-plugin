@@ -1,0 +1,20 @@
+# dsh-ssh-remote bundle patch: one Host row for the remote SSH tool suite.
+#
+# The primary machine comes from `host` / `workspace`; any OpenSSH destination
+# defined in ~/.ssh/config works. Add more machines with `hosts` entries and
+# select one per tool call with the `host` argument:
+#
+#   hosts:
+#     - id: gpu
+#       host: gpu-box          # alias from ~/.ssh/config, or user@address
+#       workspace: /data/work  # defaults to the primary workspace
+#
+# Prefer changing the machines in Settings → SSH remote development: the panel
+# stores them in ~/.dsh/ssh-remote/machines.json, which wins over this seed.
+- insert:
+    - id: ssh-remote
+      name: 'dsh-ssh-remote'
+      config:
+        host: ssh-host
+        workspace: ''
+        clearForwardings: true
