@@ -1,0 +1,44 @@
+{
+  "format": 1,
+  "title": {
+    "en": "ShangyuLei-HIT DSH plugins",
+    "zh": "ShangyuLei-HIT 的 DSH 插件"
+  },
+  "description": {
+    "en": "Plugins for DeepSeek Harness maintained by ShangyuLei-HIT.",
+    "zh": "ShangyuLei-HIT 维护的 DeepSeek Harness 插件。"
+  },
+  "plugins": [
+    {
+      "name": "dsh-ssh-remote",
+      "title": {
+        "en": "SSH remote development",
+        "zh": "SSH 远程开发机"
+      },
+      "description": {
+        "en": "Manage SSH machines in Settings, browse remote directories over SSH, register remote workspaces, and let the agent run commands and edit files on the remote host.",
+        "zh": "在设置里管理 SSH 机器、通过 SSH 浏览远程目录、注册远程工作区，让 Agent 在远端主机上执行命令和编辑文件。"
+      },
+      "icon": "icon.svg",
+      "author": "ShangyuLei-HIT",
+      "homepage": "https://github.com/ShangyuLei-HIT/dsh-ssh-remote#readme",
+      "repository": {
+        "url": "https://github.com/ShangyuLei-HIT/dsh-ssh-remote"
+      },
+      "versions": [
+        {
+          "version": "1.4.1",
+          "publishTimestamp": 1795788417,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/ShangyuLei-HIT/dsh-ssh-remote",
+            "commit": "e35aff80210d3870003564f1941e8dbf42293cf2"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-0 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}
