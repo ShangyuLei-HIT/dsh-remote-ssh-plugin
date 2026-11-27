@@ -45,11 +45,11 @@ English: [README.md](./README.md)
 
 ### 从 GitHub 安装
 
-GUI：**插件 → 添加插件** → 填入 `github:ShangyuLei-HIT/dsh-ssh-remote`。
-或在有 `dsh` CLI 的终端：
+GUI：**插件 → 添加插件** → 填入 `github:ShangyuLei-HIT/dsh-ssh-remote` 并确认。
+（桌面版 profile 由 Electron 应用独占管理，请在 GUI 里安装；用 `dsh` CLI 时对 web profile 操作：）
 
 ```sh
-dsh plugin --profile desktop add github:ShangyuLei-HIT/dsh-ssh-remote
+dsh plugin --profile web add github:ShangyuLei-HIT/dsh-ssh-remote
 ```
 
 ### 从本地目录安装

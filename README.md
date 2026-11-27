@@ -53,10 +53,12 @@ session is bound to.
 ### From GitHub
 
 In the DSH Web/Desktop GUI: **Plugins → Add plugin →** paste
-`github:ShangyuLei-HIT/dsh-ssh-remote`. Or from a shell with the `dsh` CLI:
+`github:ShangyuLei-HIT/dsh-ssh-remote` and confirm. (Desktop profiles are managed
+by the Electron app itself, so install through the GUI there; from a shell with the
+`dsh` CLI, use the web profile:)
 
 ```sh
-dsh plugin --profile desktop add github:ShangyuLei-HIT/dsh-ssh-remote
+dsh plugin --profile web add github:ShangyuLei-HIT/dsh-ssh-remote
 ```
 
 ### From a local checkout
