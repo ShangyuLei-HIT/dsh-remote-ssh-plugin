@@ -28,11 +28,9 @@
       "versions": [
         {
           "version": "1.4.3",
-          "publishTimestamp": 1795789751,
+          "publishTimestamp": 1795791123,
           "source": {
-            "type": "git",
-            "url": "https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin",
-            "commit": "b4e95ad09e4fcc75116d00385dbe3da629928379"
+            "type": "npm"
           },
           "engines": {
             "dsh": ">=0.2.2-0 <0.3.0"
