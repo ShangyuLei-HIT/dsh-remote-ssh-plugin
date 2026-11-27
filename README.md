@@ -126,7 +126,7 @@ manual setup, override the row in your profile patch (`~/.dsh/profiles/desktop/c
 
 | Field | Default | Meaning |
 | --- | --- | --- |
-| `host` | `ssh-host` | Primary OpenSSH destination (alias or `user@host`). |
+| `host` | `ssh-host` | Primary OpenSSH destination (alias or `user@host`); a fresh install uses this placeholder until a machine is added in Settings. |
 | `workspace` | `''` | Primary default remote directory; `''` means the login directory. |
 | `hosts` | `[]` | Additional machines: `[{ id, host, workspace? }]`. |
 | `sshBinary` | `ssh` | SSH client executable. |

@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [1.4.2] - 2026-11-27
+
+### Fixed
+- Prompt text and tool descriptions named the row's seed machine (`ssh-host`)
+  instead of the machine the GUI-managed registry actually defaults to, so an
+  installed bundle could describe the wrong primary machine after the GUI
+  replaced the seed.
+
 ## [1.4.1] - 2026-11-27
 
 First public release on GitHub.

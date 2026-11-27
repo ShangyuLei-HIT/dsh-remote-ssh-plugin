@@ -394,7 +394,6 @@ const TRANSFER_OUTPUT = {
  */
 export function apply(ctx, rawConfig) {
   const config = resolveConfig(rawConfig)
-  const primaryId = config.machines[0].id
   // The settings panel owns the registry after the first load; the row
   // configuration only seeds it. `DSH_SSH_REMOTE_STATE` overrides the path for
   // tests; an empty value keeps the registry in memory only.
@@ -403,6 +402,9 @@ export function apply(ctx, rawConfig) {
     ? join(process.env.DSH_HOME ?? join(homedir(), '.dsh'), 'ssh-remote', 'machines.json')
     : stateOverride === '' ? undefined : stateOverride
   const store = MachineStore.load({ seed: config.machines, file: stateFile })
+  // Prompt text and tool descriptions must name the machine the tools actually
+  // default to (the GUI-managed registry), not the row's seed configuration.
+  const primaryId = store.primary().id
   const bindingsFile = stateFile === undefined ? undefined : join(dirname(stateFile), 'workspaces.json')
   const bindings = WorkspaceBindingStore.load(bindingsFile)
   // The workspace registry is optional: a headless composition without it still

@@ -111,7 +111,7 @@ DSH 的工作区必须指向一个**已存在的本地目录**（`ctx.workspaceR
 
 | 字段 | 默认值 | 含义 |
 | --- | --- | --- |
-| `host` | `ssh-host` | 主机器 OpenSSH 目标（别名或 `user@host`）。 |
+| `host` | `ssh-host` | 主机器 OpenSSH 目标（别名或 `user@host`）；全新安装时是占位值，在设置里添加机器后以设置为准。 |
 | `workspace` | `''` | 主机器默认远程目录；空串表示登录目录。 |
 | `hosts` | `[]` | 追加机器：`[{ id, host, workspace? }]`。 |
 | `sshBinary` | `ssh` | SSH 客户端可执行文件。 |
