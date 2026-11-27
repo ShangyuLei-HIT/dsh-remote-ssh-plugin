@@ -27,12 +27,12 @@
       },
       "versions": [
         {
-          "version": "1.4.1",
-          "publishTimestamp": 1795788417,
+          "version": "1.4.2",
+          "publishTimestamp": 1795788455,
           "source": {
             "type": "git",
             "url": "https://github.com/ShangyuLei-HIT/dsh-ssh-remote",
-            "commit": "e35aff80210d3870003564f1941e8dbf42293cf2"
+            "commit": "e06a6ff758f3d0955664ecc5b4340e07caf6350d"
           },
           "engines": {
             "dsh": ">=0.2.2-0 <0.3.0"
