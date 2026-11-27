@@ -21,7 +21,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const pkg = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'))
-const repositoryUrl = 'https://github.com/ShangyuLei-HIT/dsh-ssh-remote'
+const repositoryUrl = 'https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin'
 const check = process.argv.includes('--check')
 const npmSource = process.argv.includes('--npm')
 

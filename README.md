@@ -1,9 +1,9 @@
-# dsh-ssh-remote
+# dsh-remote-ssh-plugin
 
 [![dsh-plugin](https://img.shields.io/badge/topic-dsh--plugin-7a3ef3)](https://github.com/topics/dsh-plugin)
 [![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 [![version](https://img.shields.io/badge/version-1.4.1-2ea44f)](./CHANGELOG.md)
-[![selftest](https://github.com/ShangyuLei-HIT/dsh-ssh-remote/actions/workflows/selftest.yml/badge.svg)](https://github.com/ShangyuLei-HIT/dsh-ssh-remote/actions/workflows/selftest.yml)
+[![selftest](https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/actions/workflows/selftest.yml/badge.svg)](https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/actions/workflows/selftest.yml)
 
 SSH remote development for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness):
 manage SSH machines in **Settings**, browse remote directories over SSH, register real
@@ -65,13 +65,13 @@ dsh plugin --profile web add dsh-remote-ssh-plugin
 Use the GitHub source when you want the repository head:
 
 ```sh
-dsh plugin --profile web add github:ShangyuLei-HIT/dsh-ssh-remote
+dsh plugin --profile web add github:ShangyuLei-HIT/dsh-remote-ssh-plugin
 ```
 
 ### From a local checkout
 
 ```sh
-git clone https://github.com/ShangyuLei-HIT/dsh-ssh-remote.git
+git clone https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin.git
 ```
 
 Then **Plugins → Add plugin** → choose the cloned directory (or call the `plugin_manager`
@@ -84,7 +84,7 @@ The repository publishes a DSH plugin-market index at
 (**Plugins → Discover → Add index source**):
 
 ```
-https://raw.githubusercontent.com/ShangyuLei-HIT/dsh-ssh-remote/main/plugin-market/index.json
+https://raw.githubusercontent.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/main/plugin-market/index.json
 ```
 
 ## Quick start

@@ -1,9 +1,9 @@
-# dsh-ssh-remote
+# dsh-remote-ssh-plugin
 
 [![dsh-plugin](https://img.shields.io/badge/topic-dsh--plugin-7a3ef3)](https://github.com/topics/dsh-plugin)
 [![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 [![version](https://img.shields.io/badge/version-1.4.1-2ea44f)](./CHANGELOG.md)
-[![selftest](https://github.com/ShangyuLei-HIT/dsh-ssh-remote/actions/workflows/selftest.yml/badge.svg)](https://github.com/ShangyuLei-HIT/dsh-ssh-remote/actions/workflows/selftest.yml)
+[![selftest](https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/actions/workflows/selftest.yml/badge.svg)](https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/actions/workflows/selftest.yml)
 
 给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的 SSH 远程开发插件：
 在**设置**里可视化管理 SSH 机器、通过 SSH 浏览远程目录、把远程目录注册成真正的**工作区**，
@@ -57,13 +57,13 @@ dsh plugin --profile web add dsh-remote-ssh-plugin
 需要仓库最新代码时使用：
 
 ```sh
-dsh plugin --profile web add github:ShangyuLei-HIT/dsh-ssh-remote
+dsh plugin --profile web add github:ShangyuLei-HIT/dsh-remote-ssh-plugin
 ```
 
 ### 从本地目录安装
 
 ```sh
-git clone https://github.com/ShangyuLei-HIT/dsh-ssh-remote.git
+git clone https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin.git
 ```
 
 然后 **插件 → 添加插件** 选择该目录（或用 `plugin_manager` 工具传绝对路径），重启/刷新 GUI 一次
@@ -75,7 +75,7 @@ git clone https://github.com/ShangyuLei-HIT/dsh-ssh-remote.git
 **插件 → Discover → 添加索引源** 中填写其原始 URL：
 
 ```
-https://raw.githubusercontent.com/ShangyuLei-HIT/dsh-ssh-remote/main/plugin-market/index.json
+https://raw.githubusercontent.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/main/plugin-market/index.json
 ```
 
 ## 快速上手

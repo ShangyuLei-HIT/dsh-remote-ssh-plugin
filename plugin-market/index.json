@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "dsh-ssh-remote",
+      "name": "dsh-remote-ssh-plugin",
       "title": {
         "en": "SSH remote development",
         "zh": "SSH 远程开发机"
@@ -21,18 +21,18 @@
       },
       "icon": "icon.svg",
       "author": "ShangyuLei-HIT",
-      "homepage": "https://github.com/ShangyuLei-HIT/dsh-ssh-remote#readme",
+      "homepage": "https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin#readme",
       "repository": {
-        "url": "https://github.com/ShangyuLei-HIT/dsh-ssh-remote"
+        "url": "https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin"
       },
       "versions": [
         {
-          "version": "1.4.2",
-          "publishTimestamp": 1795788455,
+          "version": "1.4.3",
+          "publishTimestamp": 1795789751,
           "source": {
             "type": "git",
-            "url": "https://github.com/ShangyuLei-HIT/dsh-ssh-remote",
-            "commit": "e06a6ff758f3d0955664ecc5b4340e07caf6350d"
+            "url": "https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin",
+            "commit": "b4e95ad09e4fcc75116d00385dbe3da629928379"
           },
           "engines": {
             "dsh": ">=0.2.2-0 <0.3.0"

@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShangyuLei-HIT/dsh-ssh-remote.git"
+    "url": "git+https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin.git"
   },
-  "homepage": "https://github.com/ShangyuLei-HIT/dsh-ssh-remote#readme",
+  "homepage": "https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin#readme",
   "bugs": {
-    "url": "https://github.com/ShangyuLei-HIT/dsh-ssh-remote/issues"
+    "url": "https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/issues"
   },
   "keywords": [
     "dsh",
