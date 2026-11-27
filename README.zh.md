@@ -43,10 +43,18 @@ English: [README.md](./README.md)
 
 ## 安装
 
+### 从 npm 安装（推荐）
+
+GUI：**插件 → 添加插件** → 填入 `@leishangyu/dsh-ssh-remote`。
+用 `dsh` CLI 时（web profile；桌面版 profile 由应用独占管理，请在 GUI 安装）：
+
+```sh
+dsh plugin --profile web add @leishangyu/dsh-ssh-remote
+```
+
 ### 从 GitHub 安装
 
-GUI：**插件 → 添加插件** → 填入 `github:ShangyuLei-HIT/dsh-ssh-remote` 并确认。
-（桌面版 profile 由 Electron 应用独占管理，请在 GUI 里安装；用 `dsh` CLI 时对 web profile 操作：）
+需要仓库最新代码时使用：
 
 ```sh
 dsh plugin --profile web add github:ShangyuLei-HIT/dsh-ssh-remote

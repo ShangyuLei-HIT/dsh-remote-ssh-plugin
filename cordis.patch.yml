@@ -13,7 +13,7 @@
 # stores them in ~/.dsh/ssh-remote/machines.json, which wins over this seed.
 - insert:
     - id: ssh-remote
-      name: 'dsh-ssh-remote'
+      name: '@leishangyu/dsh-ssh-remote'
       config:
         host: ssh-host
         workspace: ''

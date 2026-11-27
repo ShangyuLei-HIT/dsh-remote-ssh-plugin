@@ -9,7 +9,8 @@
  * commit). The index is validated with the DSH index validator when that package
  * is resolvable from `DSH_INSTALL_DIR`.
  *
- *   node scripts/make-index.mjs            # write plugin-market/index.json
+ *   node scripts/make-index.mjs            # write plugin-market/index.json (git source)
+ *   node scripts/make-index.mjs --npm      # list the npm release instead (after publish)
  *   node scripts/make-index.mjs --check    # validate without writing
  */
 
@@ -22,6 +23,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const pkg = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'))
 const repositoryUrl = 'https://github.com/ShangyuLei-HIT/dsh-ssh-remote'
 const check = process.argv.includes('--check')
+const npmSource = process.argv.includes('--npm')
 
 const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim()
 if (!/^[0-9a-f]{40}$/.test(commit)) throw new Error(`unexpected commit "${commit}"`)
@@ -50,7 +52,7 @@ const index = {
         {
           version: pkg.version,
           publishTimestamp: Math.floor(Date.now() / 1000),
-          source: { type: 'git', url: repositoryUrl, commit },
+          source: npmSource ? { type: 'npm' } : { type: 'git', url: repositoryUrl, commit },
           ...(dshRange === undefined ? {} : { engines: { dsh: dshRange } }),
         },
       ],
@@ -63,7 +65,7 @@ if (!check) {
   mkdirSync(outDir, { recursive: true })
   writeFileSync(join(outDir, 'index.json'), `${JSON.stringify(index, null, 2)}\n`, 'utf8')
   copyFileSync(join(root, 'icon.svg'), join(outDir, 'icon.svg'))
-  console.log(`wrote plugin-market/index.json (${pkg.name}@${pkg.version}, commit ${commit.slice(0, 12)})`)
+  console.log(`wrote plugin-market/index.json (${pkg.name}@${pkg.version}, ${npmSource ? 'npm source' : `commit ${commit.slice(0, 12)}`})`)
 }
 
 // Validate against the running DSH installation when available.

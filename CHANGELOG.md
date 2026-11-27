@@ -4,6 +4,13 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [1.4.3] - 2026-11-27
+
+### Changed
+- First npm release as `@leishangyu/dsh-ssh-remote`: the unscoped npm name
+  `dsh-ssh-remote` is owned by another author, so the package publishes under the
+  maintainer scope. The bundle patch, docs and market index use the scoped name.
+
 ## [1.4.2] - 2026-11-27
 
 ### Fixed

@@ -50,12 +50,19 @@ session is bound to.
 
 ## Install
 
+### From npm (recommended)
+
+In the DSH Web/Desktop GUI: **Plugins → Add plugin →** enter
+`@leishangyu/dsh-ssh-remote`. From a shell with the `dsh` CLI (web profile; the
+Desktop profile is managed by the app itself, install through its GUI):
+
+```sh
+dsh plugin --profile web add @leishangyu/dsh-ssh-remote
+```
+
 ### From GitHub
 
-In the DSH Web/Desktop GUI: **Plugins → Add plugin →** paste
-`github:ShangyuLei-HIT/dsh-ssh-remote` and confirm. (Desktop profiles are managed
-by the Electron app itself, so install through the GUI there; from a shell with the
-`dsh` CLI, use the web profile:)
+Use the GitHub source when you want the repository head:
 
 ```sh
 dsh plugin --profile web add github:ShangyuLei-HIT/dsh-ssh-remote
