@@ -2,7 +2,7 @@
 
 [![dsh-plugin](https://img.shields.io/badge/topic-dsh--plugin-7a3ef3)](https://github.com/topics/dsh-plugin)
 [![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
-[![version](https://img.shields.io/badge/version-1.4.1-2ea44f)](./CHANGELOG.md)
+[![npm](https://img.shields.io/npm/v/dsh-remote-ssh-plugin)](https://www.npmjs.com/package/dsh-remote-ssh-plugin)
 [![selftest](https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/actions/workflows/selftest.yml/badge.svg)](https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/actions/workflows/selftest.yml)
 
 SSH remote development for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness):
@@ -13,7 +13,13 @@ working on this machine.
 
 中文文档：[README.zh.md](./README.zh.md)
 
-![Illustration: a local developer machine connected over an encrypted SSH channel to a remote server](docs/preview.svg)
+![Architecture diagram: a local DeepSeek Harness session manages SSH machines and remote workspaces, then talks to a Linux host over an encrypted SSH channel; the agent runs commands and edits files there through the remote tools](https://raw.githubusercontent.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/main/docs/preview.svg)
+
+The picture above is the whole model in one glance: **the local DSH session** manages machines and
+workspaces in Settings, **the SSH channel** carries commands and file contents, and **the remote
+host** holds the project directory your agent works in. Adding a machine and choosing a remote
+directory registers a workspace named `SSH · machine · path`; a session opened there sends the
+`remote_*` tools to that directory while the local shell and file tools stay on this Mac.
 
 ## Features
 

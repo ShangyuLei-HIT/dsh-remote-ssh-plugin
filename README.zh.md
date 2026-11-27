@@ -2,7 +2,7 @@
 
 [![dsh-plugin](https://img.shields.io/badge/topic-dsh--plugin-7a3ef3)](https://github.com/topics/dsh-plugin)
 [![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
-[![version](https://img.shields.io/badge/version-1.4.1-2ea44f)](./CHANGELOG.md)
+[![npm](https://img.shields.io/npm/v/dsh-remote-ssh-plugin)](https://www.npmjs.com/package/dsh-remote-ssh-plugin)
 [![selftest](https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/actions/workflows/selftest.yml/badge.svg)](https://github.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/actions/workflows/selftest.yml)
 
 给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的 SSH 远程开发插件：
@@ -12,7 +12,12 @@
 
 English: [README.md](./README.md)
 
-![示意图：本地开发机通过加密 SSH 通道连接到运行 shell、保存项目文件的远程服务器](docs/preview.svg)
+![架构示意图：本地 DeepSeek Harness 会话在设置中管理 SSH 机器与远程工作区，通过加密 SSH 通道连接到 Linux 主机，Agent 用 remote_* 工具在远端执行命令、编辑文件](https://raw.githubusercontent.com/ShangyuLei-HIT/dsh-remote-ssh-plugin/main/docs/preview.svg)
+
+上图就是整体模型：**本地 DSH 会话**在设置里管理机器与工作区，**SSH 通道**承载命令与文件内容，
+**远程主机**上放着 Agent 实际工作的项目目录。添加机器并选定远程目录后，会注册一个名为
+`SSH · 机器 · 路径` 的工作区；在该工作区下新建会话时，`remote_*` 工具默认指向该远程目录，
+而本机的 shell 与文件工具仍作用在这台 Mac 上。
 
 ## 功能
 

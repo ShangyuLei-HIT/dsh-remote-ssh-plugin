@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [1.4.4] - 2026-11-27
+
+### Changed
+- The feature diagram is now a labelled architecture picture (local DSH session,
+  encrypted SSH channel, remote Linux host, and the four-step workflow) with a
+  caption in both READMEs.
+- README images use absolute raw URLs so they also render on the npm package
+  page, and the static version badge became the npm version badge.
+
 ## [1.4.3] - 2026-11-27
 
 ### Changed

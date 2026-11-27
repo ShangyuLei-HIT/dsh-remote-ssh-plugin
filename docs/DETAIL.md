@@ -1,1 +1,1 @@
-![Illustration: a local developer machine connected over an encrypted SSH channel to a remote server that runs the shell and holds the project files](preview.svg)
+![Architecture diagram: local DSH session with a Settings panel and remote workspace, an encrypted SSH channel carrying commands and file contents, and a Linux host holding the project directory](preview.svg)

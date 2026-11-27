@@ -1,6 +1,6 @@
 {
   "name": "dsh-remote-ssh-plugin",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "SSH remote development for DeepSeek Harness: manage SSH machines in Settings, browse remote directories, register remote workspaces, and let the agent run commands and edit files over SSH.",
   "license": "MIT",
   "author": {
